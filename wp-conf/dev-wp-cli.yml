@@ -1,0 +1,47 @@
+# Global parameter for the dev environnement
+color: true
+disabled_commands:
+  - network meta
+  - shell
+  - server
+apache_modules:
+  - mod_rewrite
+rewrite structure:
+  - /%year%/%monthnum%/%postname%/
+scaffold _s:
+  author: Guillaume RICHARD
+  author_uri: https://guillaume-richard.fr/
+scaffold plugin:
+  plugin_description: My sample-plugin description
+  plugin_author: Guillaume RICHARD
+  plugin_author_uri: https://guillaume-richard.fr/
+  plugin_uri: https://jf-blog.fr/
+theme install:
+  - oblique
+post generate:
+  post_author: guillaume
+core download:
+  locale: fr_FR
+core install:
+  admin_user: guillaume
+  admin_password: guillaume
+  admin_email: g.jf.richard@gmail.com
+  title: WordPress Development
+  url: http://local.wordpress/
+core config:
+  dbuser: root
+  dbpass: admin
+  dbhost: localhost
+  dbname: wordpress
+  dbprefix: wp_
+  extra-php: |
+        define('WP_DEBUG', true);
+        if (WP_DEBUG) {
+          define('WP_DEBUG_LOG', true);
+          define('WP_DEBUG_DISPLAY', false);
+          @ini_set('display_errors',0);
+        }
+        define('WP_CACHE', false); // on enlève le cache
+        define('WP_POST_REVISIONS', false);
+        define('DISALLOW_FILE_EDIT',true);
+        define('SAVEQUERIES', true);

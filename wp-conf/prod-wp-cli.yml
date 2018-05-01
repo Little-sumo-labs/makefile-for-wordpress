@@ -1,0 +1,34 @@
+# Global parameter for the prod environnement
+color: true
+disabled_commands:
+  - network meta
+  - shell
+  - server
+  - cli
+  - scaffold
+apache_modules:
+  - mod_rewrite
+rewrite structure:
+  - /%postname%/
+core download:
+  locale: fr_FR
+core install:
+  admin_user: guillaume
+  admin_password: guillaume
+  admin_email: g.jf.richard@gmail.com
+  title: WordPress Development
+  url: http://local.abc-data/
+core config:
+  dbuser: root
+  dbpass: admin
+  dbhost: localhost
+  dbname: wordpress_prod
+  dbprefix: wp_
+  extra-php: |
+        define('ALLOW_UNFILTERED_UPLOADS', false); // interdit l'upload non filtré
+        define('RELOCATE', false); // evite que l'URL de votre site puisse être modifiée dans les options
+        define('DIEONDBERROR', false); // pour ne pas montrer les erreurs de base de données
+        define('WP_DEBUG', false); // on enlève le debug
+        define('WP_CACHE', true);
+        define('WP_POST_REVISIONS', false);
+        define('DISALLOW_FILE_MODS',true); // prend en compte DISALLOW_FILE_EDIT
