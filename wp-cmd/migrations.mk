@@ -1,4 +1,4 @@
-# Migration d'un site WP d'un serveur sur un autre
+# Migrating a WP site from one server to another
 .PHONY: wp-export wp-import wp-importer
 
 wp-export: ##@migrations export Wordpress project content

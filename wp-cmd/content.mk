@@ -1,6 +1,5 @@
 .PHONY: wp-content wp-articles wp-comment wp-page wp-themes wp-plugins wp-empty wp-user
-# Gestion des contenus du site
-
+# Site content management
 pages = Accueil Blog Réalisation Contact
 
 wp-content:
@@ -11,7 +10,7 @@ wp-content:
 	make wp-page
 	make wp-comment
 
-wp-articles: ##@content Génère des pages avec de faux contenu
+wp-articles: ##@content Generate pages with false content
 	curl http://loripsum.net/api/5 | wp post generate --post_content --count=30
 
 wp-themes: ##@content Installing themes

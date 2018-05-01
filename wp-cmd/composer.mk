@@ -1,5 +1,5 @@
 .PHONY: cinstall
-# Gestion de composer
+# Composer Management
 
 cinstall: vendor ##@composer composer installation
 

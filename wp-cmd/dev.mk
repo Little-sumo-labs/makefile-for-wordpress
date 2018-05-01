@@ -1,5 +1,5 @@
 .PHONY: create-plugin create-theme delete-plugin delete-theme
-# Commandes pour le développement
+# Orders for development
 
 name?=my-creation
 test?=no

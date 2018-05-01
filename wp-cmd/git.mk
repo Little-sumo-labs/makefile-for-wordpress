@@ -1,5 +1,5 @@
 .PHONY: ginit gconf gpull gpush gstash gunstash gbrstash gclstash glstash
-# github
+# Github Management
 
 repository = https://github.com/Little-sumo-labs/makefile-for-wordpress.git
 branch?=newbranch

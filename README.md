@@ -22,14 +22,12 @@ When you type this command, the full help list appears in the shell.
 To find the function that allows this display, you can go to the next page [Add a help target to a Makefile](https://gist.github.com/prwhite/8168133) 
 
 ## development
-* Installation de Wordpress
-	[x] en mode WP-CLI
-	[x] Suppression complète de WP
-* Migrations
-	[x] export simple
-	[x] import simple
+* Installation de Wordpress en mode WP-CLI
+* Suppression complète de WP
+* Migrations (export & import simple)
 
 ## Future development
+* Création de blocks pour gutemberg
 * ...
 
 
