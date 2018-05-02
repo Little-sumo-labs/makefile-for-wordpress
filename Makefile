@@ -16,7 +16,6 @@ install: ##@install Complete installation of a WP site
 	cp wp-conf/$(env)-wp-cli.yml wp-cli.yml
 	make wp-install
 	make wp-empty
-	make wp-content
 	make update-third-part
 
 uninstall: ##@install Destroys files created during WP installation
