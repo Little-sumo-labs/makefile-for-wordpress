@@ -19,17 +19,29 @@ git clone git@github.com:Little-sumo-labs/makefile-for-wordpress.git
 make
 ```
 When you type this command, the full help list appears in the shell.
-To find the function that allows this display, you can go to the next page [Add a help target to a Makefile](https://gist.github.com/prwhite/8168133) 
+To find the function that allows this display, you can go to the next page [Add a help target to a Makefile](https://gist.github.com/prwhite/8168133)
+
+### ... and more
+To learn more about Make, I created a support in PDF format, which I put on Slideshare : [ Make (et make file) dans le cadre de wordpress](https://fr.slideshare.net/scaythe/make-et-make-file-dans-le-cadre-de-wordpress).
+If you have any questions, do not hesitate to ask.
+to know more about the commands contained in the makefile, make the following command in the terminal :
+
+```bash
+make help
+```
+
+the terminal will give you an order list, with target and comment
 
 ## development
-* Installation de Wordpress en mode WP-CLI
-* Suppression complète de WP
+* Installing Wordpress in WP-CLI Mode
+* Complete removal of WP
 * Migrations (export & import simple)
 
 ## Future development
-* Création de blocks pour gutemberg
+* Creating blocks for gutenberg
+* Creation and advanced management of plugin (Code Coverage, Grunt & Gulp)
+* Creation and advanced management of theme (Code Coverage, Grunt & Gulp)
 * ...
-
 
 ## Documentation & Useful links
 ### make & Makefile
